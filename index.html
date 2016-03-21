@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Beer Review</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="page-header">
+          <h1>Beer Review</h1>
+        </div>
+
+        <section class="beers">
+          <h2>Beers</h2>
+        </section>
+
+        <form class="beer-form">
+          <h3>Add a New Beer</h3>
+
+          <div class="form-group">
+            <input type="text" id="beer-name" class="form-control" placeholder="Beer Name">
+            </input>
+          </div>
+
+          <div class="form-group">
+            <select id="beer-category" form="carform">
+              <option value="porter">Porter</option>
+              <option value="ipa">IPA</option>
+              <option value="pilsner">Pilsner</option>
+              <option value="wheat">Wheat</option>
+            </select>
+          </div>
+          <div class="rating-group">
+            <select id="rating-category" form="carform">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div><br>
+
+          <button class="btn btn-primary post-beer">Post</button>
+          <button class="btn btn-primary sort-beer">Sort</button>
+        </form>
+
+        <script src="script.js"></script>
+      </div>
+    </div>
+
+  </body>
+</html>
